@@ -1,0 +1,1 @@
+This folder contains analysis of the data set, draft and summited works.
