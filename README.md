@@ -1,6 +1,8 @@
 # **Solo_106 - Kepler Exoplanet Search Results**
 
 
+
+
 ## Kepler Space Telescope
 
 For decades, humans have dreamed about traveling across vast space and living on other planets. Although we can see as much as 5000 stars with naked eyes<sup>[1]</sup>, planets are much smaller, and they hide in the light of their stars.
