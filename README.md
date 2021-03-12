@@ -1,9 +1,5 @@
-# Solo_106 - Kepler Exoplanet Search Results
+# **Solo_106 - Kepler Exoplanet Search Results**
 
-
-## Milestones
-
-Details for Milestone are available on Canvas (left sidebar, Course Project) or [here](https://firas.moosvi.com/courses/data301/project/milestone01.html).
 
 ## Kepler Space Telescope
 
@@ -13,7 +9,7 @@ To search habitable exoplanets, NASA lunched the Kepler space telescope at Cape 
 
 The sole mission of the Kepler spacecraft was to identify and validate planet candidates that are earth-like, terrestrial and in the habitable zone where liquid water might exist<sup>[4]</sup>. Before its retirement in 2018, Kepler observed 530,506 stars and discovered far more planets than scientists estimated<sup>[5]</sup>.
 
-When Kepler telescope was operational, I remembered it was like discovering new planets every other day. News about possible habitable worlds were frequent, I thought moving to Kepler-22b was in the near future. Even though, better and newer spacecrafts are out there now finding planets and systems, the feeling is not the same. I would like to share the result of this inspiring mission.
+When Kepler telescope was operational, news about possible habitable worlds were so frequent, it was like moving to Kepler-22b was in the near future. I would like to share the result of this inspiring mission.
 
 ## Kepler Exoplanet Search Results
 
