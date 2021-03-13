@@ -1,5 +1,41 @@
 import pandas as pd
-from scripts import data_transform as dt
+import math
+
+def get_transit_time(df):
+    arr = []
+    for index, value in df["Transit Epoch"].items():
+        arr.append(pd.Timestamp("Jan 1 2009 12:00 UTC") + pd.DateOffset(days=value))
+    df.insert(13, "Time of First Transit Event", arr)
+    
+def get_planet_radius(df):
+    arr = []
+    EARTH_RADIUS = 6371    # using 6371km as Earth radius
+    for index, value in df["Planetary Radius (Earth radii)"].items():
+        arr.append(value * EARTH_RADIUS)
+    df.insert(17, "Planetary Radius (km)", arr)
+    
+def get_gravity(df):
+    arr = []
+    for index, value in df["Stellar Surface Gravity (log10(cm s-2)"].items():
+        arr.append(math.pow(10, value) / 100)
+    df.insert(21, "Stellar Surface Gravity (m/s^2)", arr)
+    
+def get_star_radius(df):
+    SUN_RADIUS = 696340
+    arr = []
+    for index, value in df["Stellar Radius (solar radii)"].items():
+        arr.append(value * SUN_RADIUS)
+    df.insert(23, "Stellar Radius (km)", arr)
+    
+def get_star_mass(df):
+    GRAVITIONAL_CONSTANT = 6.67408 * math.pow(10, -11)
+    arr = []
+    r = df["Stellar Radius (km)"]
+    g = df["Stellar Surface Gravity (m/s^2)"]
+    size = df.shape[0]
+    for i in range(0, size):
+        arr.append((g[i] * math.pow(r[i] * 1000, 2)) / GRAVITIONAL_CONSTANT)
+    df.insert(24, "Mass of the Star (kg)", arr)
 
 def load_and_process(url_or_path_to_csv_file):
     df = (
@@ -17,10 +53,18 @@ def load_and_process(url_or_path_to_csv_file):
                       "koi_srad":"Stellar Radius (solar radii)", "ra":"Right Ascension", "dec":"Declination"})
         )
 
-    dt.get_transit_time(df)
-    dt.get_planet_radius(df)
-    dt.get_gravity(df)
-    dt.get_star_radius(df)
-    dt.get_star_mass(df)
+    get_transit_time(df)
+    get_planet_radius(df)
+    get_gravity(df)
+    get_star_radius(df)
+    get_star_mass(df)
 
     return df
+
+
+    
+def save_to_csv(df):
+    print("File will be saved to ../data/processed")
+    user_input = input("Enter file name with .csv :")
+    df.to_csv("../data/processed/" + user_input, index=False)
+    print("Done")
