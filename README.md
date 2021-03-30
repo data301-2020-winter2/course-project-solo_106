@@ -1,7 +1,7 @@
 # **Solo_106 - Kepler Exoplanet Search Results**
 &nbsp;
 &nbsp;
-## Kepler Space Telescope
+### Kepler Space Telescope
 
 For decades, humans have dreamed about traveling across vast space and living on other planets. Although we can see as much as 5000 stars with naked eyes<sup>[1]</sup>, planets are much smaller, and they hide in the light of their stars.
 
@@ -11,7 +11,7 @@ The sole mission of the Kepler spacecraft was to identify and validate planet ca
 
 When Kepler telescope was operational, news about possible habitable worlds were so frequent, it was like moving to Kepler-22b was in the near future. I would like to share the result of this inspiring mission.
 
-## Kepler Exoplanet Search Results
+### Kepler Exoplanet Search Results
 
 The data set contains 9564 entries of Kepler object of interest (KOI). A KOI is an object that exhibited at least one transit-like event<sup>[7]</sup>. Each entry has data such as the KOI's ID, name, Kepler name if it is a confirmed planet, and data collected by the Kepler space telescope.
 
@@ -20,11 +20,11 @@ The data set is provided by the National Aeronautics and Space Administration. T
 Because some data processes are still ongoing, and space discoveries never stop, the data set could evolve over time. The data set used was accessed in February 11, 2021. For most accurate and current number of discovered exoplanets, please refer to NASA website.
 
 
-## Team Members
+### Team Members
 
 - James Jiang: I'm a student doing computer science.
 
-## References
+### References
 
 [1] EarthSky, "How many stars can you see?" *EarthSky.* [Online]. Available: https://earthsky.org/astronomy-essentials/how-many-stars-could-you-see-on-a-clear-moonless-night (Accessed Feb. 12, 2021).
 
