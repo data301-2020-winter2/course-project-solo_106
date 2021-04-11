@@ -24,6 +24,9 @@ Because some data processes are still ongoing, and space discoveries never stop,
 
 - James Jiang: I'm a student doing computer science.
 
+### Project Dashboard
+https://us-west-2b.online.tableau.com/#/site/data301/workbooks/346929/views
+
 ### References
 
 [1] EarthSky, "How many stars can you see?" *EarthSky.* [Online]. Available: https://earthsky.org/astronomy-essentials/how-many-stars-could-you-see-on-a-clear-moonless-night (Accessed Feb. 12, 2021).
